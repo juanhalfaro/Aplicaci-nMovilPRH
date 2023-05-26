@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Buzón de Quejas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="ion-text-center">Buzón de Quejas</ion-title>
+    </ion-toolbar>
+
+<div name="wasd">
+  <br>
+<ion-input
+      type="text"
+      fill="solid"
+      label="RFC"
+      labelPlacement="floating"
+      helperText="RFC"
+      errorText="RFC Invalido"
+      ngModel
+      maxlength="10"
+      minlength="10"
+></ion-input>
+
+<br>
+<ion-input
+    type="text"
+    fill="solid"
+    label="Numero de Trabajador"
+    labelPlacement="floating"
+    helperText="Numero"
+    errorText="Numero Invalido"
+    ngModel
+    maxlength="10"
+    minlength="10"
+></ion-input>
+
+<br>
+<ion-input
+      type="email"
+      fill="solid"
+      label="Correo"
+      labelPlacement="floating"
+      helperText="Enter a valid email"
+      errorText="Invalid email"
+      ngModel
+      email
+></ion-input>
+
+<br>
+<ion-input
+      type="text"
+      fill="solid"
+      label="Mensaje"
+      labelPlacement="floating"
+      helperText="Escriba su mensaje"
+      errorText="Invalid email"
+      ngModel
+></ion-input>
+
+<br>
+<ion-button id="open-toast" class="ion-align-items-center">Enviar</ion-button>
+<ion-toast trigger="open-toast" message="Enviado" [duration]="3000" icon="checkmark"></ion-toast>
+</div>
+
+
+
+
+
+    
+
+
+

@@ -12,10 +12,23 @@
     <ion-toolbar>
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
+    <ion-searchbar placeholder="Buscar"></ion-searchbar>
   </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="person-outline"></ion-icon>
+      
+    </ion-tab-button>
+    <ion-tab-button tab="radio">
+      <ion-icon name="add-circle-outline"></ion-icon>
+      
+    </ion-tab-button>
+    <ion-tab-button tab="library">
+    <ion-icon name="qr-code-outline"></ion-icon>
+      
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

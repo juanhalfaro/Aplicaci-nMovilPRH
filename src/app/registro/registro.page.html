@@ -26,18 +26,19 @@
 
     <ion-card-content>
       <ion-input type="text" fill="solid" label="Tu nombre" labelPlacement="floating" helperText="Ingrese su nombre"
-        errorText="Nombre Invalido" maxlength="10" minlength="5" ngModel></ion-input>
+        errorText="Nombre Invalido" maxlength="10" minlength="5" required="text" ngModel></ion-input>
 
       <ion-input type="email" fill="solid" label="Correo Electrónico" labelPlacement="floating" helperText="Ingresa un Correo"
-        errorText="Correo Invalido" ngModel email></ion-input>
+        errorText="Correo Invalido" required="email" ngModel email></ion-input>
 
       <ion-input type="password" fill="solid" label="Contraseña" labelPlacement="floating"
-        helperText="Ingrese una Contraseña" errorText="Contraseña Invalida" maxlength="10" minlength="6" ngModel></ion-input>
+        helperText="Ingrese una Contraseña" errorText="Contraseña Invalida" required="password" maxlength="10" minlength="6" ngModel></ion-input>
       <br>
       <p class="ion-align-items-end">La contraseña debe contener al menos 6 caracteres.</p>
       <br>
       <ion-input type="password" fill="solid" label="Contraseña" placeholder="Vuelve a escribir tu contraseña"
-        labelPlacement="floating" helperText="Ingrese una Contraseña"  maxlength="10" minlength="6" errorText="Contraseña Invalida"
+        labelPlacement="floating" helperText="Ingrese una Contraseña"  maxlength="10" minlength="6" required="password"
+        errorText="Contraseña Invalida"
         ngModel></ion-input>
       <br>
       <p>Al crear una cuenta, declaras que todos los trámites de la plataforma los realizarás personalmente y el uso de

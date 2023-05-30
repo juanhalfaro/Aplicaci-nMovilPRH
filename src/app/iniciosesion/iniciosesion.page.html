@@ -25,13 +25,13 @@
 
     <ion-card-content>
       <ion-input type="email" fill="solid" label="Correo" labelPlacement="floating" helperText="Ingresa un Correo"
-        errorText="Correo Invalido" ngModel email></ion-input>
+        errorText="Correo Invalido" required="email"  ngModel email></ion-input>
         <br>
         <a href="https://webservicebeta.irapuato.gob.mx/auth_beta_r/index.php/login/access/d1fe173d08e959397adf34b1d77e88d7#modal-aviso-privacidad">
          ¿Olvidaste tu Contraseña?</a>
         <br>
       <ion-input type="password" fill="solid" label="Contraseña" labelPlacement="floating"
-        helperText="Ingrese una Contraseña" errorText="Contraseña Invalida" maxlength="10" minlength="6" ngModel></ion-input>
+        helperText="Ingrese una Contraseña" errorText="Contraseña Invalida" maxlength="10" minlength="6" required="password" ngModel></ion-input>
       <ion-button color="success" expand="block">Iniciar Sesión</ion-button>
       <br>
       <p>¿Eres nuevo en Irapuato.gob.mx?</p>

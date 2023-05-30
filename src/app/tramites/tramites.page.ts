@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tramites.page.scss'],
 })
 export class TramitesPage implements OnInit {
+alertButtons: any;
+alertInputs: any;
 
   constructor() { }
 
@@ -13,3 +15,5 @@ export class TramitesPage implements OnInit {
   }
 
 }
+
+

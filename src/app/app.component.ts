@@ -10,14 +10,9 @@ export class AppComponent {
    { title: 'Tramites', url: './tramites', icon: 'document' },
     { title: 'Asistencia', url: './asistencia', icon: 'calendar' },
     { title: 'Buzón', url: './buzon', icon: 'mail' },
-    { title: 'Inicio de Sesión', url: './iniciosesion', icon: 'people' },
-    { title: 'Registro', url: './registro', icon: 'person' },
-    { title: 'Cerrar Sesión', url: './folder', icon: 'log-out'},
+    // { title: 'Inicio de Sesión', url: './iniciosesion', icon: 'people' },
+    // { title: 'Registro', url: './registro', icon: 'person' },
+    // { title: 'Cerrar Sesión', url: './folder', icon: 'log-out'},
   ];
      
 }
-
-
-
-
-

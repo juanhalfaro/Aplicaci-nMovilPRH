@@ -30,6 +30,18 @@ const routes: Routes = [
   {
     path: 'ajustes',
     loadChildren: () => import('./ajustes/ajustes.module').then( m => m.AjustesPageModule)
+  },
+  {
+    path: 'contacto',
+    loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'iniciosesion',
+    loadChildren: () => import('./iniciosesion/iniciosesion.module').then( m => m.IniciosesionPageModule)
   }
 ];
 

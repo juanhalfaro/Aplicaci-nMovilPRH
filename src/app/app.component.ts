@@ -10,11 +10,11 @@ export class AppComponent {
    { title: 'Tramites', url: './tramites', icon: 'document' },
     { title: 'Asistencia', url: './asistencia', icon: 'calendar' },
     { title: 'Buzón de Quejas', url: './buzon', icon: 'mail' },
-    { title: 'Contacto', url: './contacto', icon: 'call' },
-    { title: 'Ajustes', url: './ajustes', icon: 'cog' },
+    { title: 'Inicio de Sesión', url: './iniciosesion', icon: 'people' },
+    { title: 'Registro', url: './registro', icon: 'person' },
     { title: 'Cerrar Sesión', url: '/folder/Logout', icon: 'log-out'},
   ];
-    
+     
 }
 
 

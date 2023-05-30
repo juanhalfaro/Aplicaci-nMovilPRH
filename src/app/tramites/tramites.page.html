@@ -1,24 +1,90 @@
+<!-- HEADER -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Tramites</ion-title>
+    <!-- IMAGENES -->
+    <img src="https://webservice.irapuato.gob.mx/Imagenes/logoI.png" width="50px" slot="start"> 
+    <img src="http://serverdesarrollo.irapuato.gob.mx/repositorio/assets/image-resources/2021/logo_irapuato_2021.png"
+    width="50px" slot="end">
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<!-- BODY -->
+<ion-content id="body" [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tramites</ion-title>
+      <ion-title size="large" class="ion-text-center">Trámites Simples</ion-title>
     </ion-toolbar>
-    <ion-searchbar animated="true" placeholder="Buscar"></ion-searchbar>
   </ion-header>
 
-  <ion-list>
-    <ion-item>
-      <ion-select aria-label="Tramites" interface="action-sheet" placeholder="Selecciona tu Tramite">
-        <ion-select-option value="Tramite1">Tramite1</ion-select-option>
-        <ion-select-option value="Tramite2">Tramite2</ion-select-option>
-        <ion-select-option value="Tramite3">Tramite3</ion-select-option>
-      </ion-select>
-    </ion-item>
-  </ion-list>
-</ion-content>
+<!-- CARD -->
+  <ion-card color="light">
+    <ion-card-content>
+
+  <!-- ACORDION DATOS -->
+      <p>Es importante cuidar al paciente, ser seguido por el paciente, pero sucederá en un momento en el que hay mucho trabajo y dolor. 
+        Porque para llegar al más mínimo detalle, nadie debe practicar ningún tipo de trabajo a menos que obtenga algún beneficio de él.
+         No te enojes con el dolor en la reprimenda en el placer que quiere ser un cabello del dolor en la esperanza de que no haya crianza.
+         A menos que estén cegados por la lujuria, no salen, están en falta quienes abandonan sus deberes y ablandan su corazón, eso es trabajo.</p>
+
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="primary">
+        <ion-label>Tramite de Prueba</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Descripción del Tramite</div>
+      <div class="ion-padding" slot="content">Requisitos</div>
+      <div class="ion-padding" slot="content">Documentos</div>
+      <div class="ion-padding" slot="content">Tiempo de Respuesta</div>
+      <div class="ion-padding" slot="content">Domicilio a recoger</div>
+      <div class="ion-padding" slot="content">
+        <br>
+        <ion-button expand="block">
+        <ion-icon  slot="end" name="send"></ion-icon>
+        Enviar
+      </ion-button>
+      </div>
+    </ion-accordion>
+
+    <!-- ACORDION TRAMITE -->
+    <ion-accordion value="second">
+      <ion-item slot="header" color="primary">
+        <ion-label>Descripción del Trámite</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Descripción del Trámite</div>
+      <div class="ion-padding" slot="content">Requisitos</div>
+      <div class="ion-padding" slot="content">Tiempo Respuesta</div>
+      <div class="ion-padding" slot="content">Domicilio para recoger</div>
+      <div class="ion-padding" slot="content">
+        <br>
+        <ion-button expand="block">
+          <ion-icon  slot="end" name="send"></ion-icon>
+          Enviar
+        </ion-button>
+        <ion-toast trigger="open-toast" message="Enviado" [duration]="3000" icon="checkmark"></ion-toast>
+      </div>
+    </ion-accordion>
+
+    <!-- ACORDION PRUEBA3 -->
+    <ion-accordion value="third">
+      <ion-item slot="header" color="primary">
+        <ion-label>PDV-PRUEBA</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Descripción del Trámite</div>
+      <div class="ion-padding" slot="content">Requisitos</div>
+      <div class="ion-padding" slot="content">Documentos</div>
+      <div class="ion-padding" slot="content">Tiempo Respuesta</div>
+      <div class="ion-padding" slot="content">Domicilio para recoger</div>
+      <div class="ion-padding" slot="content">
+        <br>
+        <ion-button expand="block">
+          <ion-icon  slot="end" name="send"></ion-icon>
+          Enviar
+        </ion-button>
+        <ion-toast trigger="open-toast" message="Enviado" [duration]="3000" icon="checkmark"></ion-toast>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-card-content>
+</ion-card>
+

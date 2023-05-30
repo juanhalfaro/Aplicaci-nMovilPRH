@@ -1,24 +1,19 @@
+<!-- MENU -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{ folder }}</ion-title>
+    <img src="http://serverdesarrollo.irapuato.gob.mx/repositorio/assets/image-resources/2021/logo_irapuato_2021.png" width="50px" slot="end">
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-    <ion-searchbar placeholder="Buscar"></ion-searchbar>
-  </ion-header>
-</ion-content>
+
 
 <ion-tabs>
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
+    <ion-tab-button href="#" tab="home">
       <ion-icon name="person-outline"></ion-icon>
       
     </ion-tab-button>

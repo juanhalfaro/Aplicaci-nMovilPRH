@@ -1,9 +1,11 @@
 <!-- HEADER -->
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" id="header">
   <ion-toolbar>
     <ion-title>Tramites</ion-title>
-    <!-- IMAGENES -->
-    <img src="https://webservice.irapuato.gob.mx/Imagenes/logoI.png" width="50px" slot="start"> 
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!-- IMAGEN -->
     <img src="http://serverdesarrollo.irapuato.gob.mx/repositorio/assets/image-resources/2021/logo_irapuato_2021.png"
     width="50px" slot="end">
   </ion-toolbar>
@@ -21,12 +23,9 @@
   <ion-card color="light">
     <ion-card-content>
 
-  <!-- ACORDION DATOS -->
-      <p>Es importante cuidar al paciente, ser seguido por el paciente, pero sucederá en un momento en el que hay mucho trabajo y dolor. 
-        Porque para llegar al más mínimo detalle, nadie debe practicar ningún tipo de trabajo a menos que obtenga algún beneficio de él.
-         No te enojes con el dolor en la reprimenda en el placer que quiere ser un cabello del dolor en la esperanza de que no haya crianza.
-         A menos que estén cegados por la lujuria, no salen, están en falta quienes abandonan sus deberes y ablandan su corazón, eso es trabajo.</p>
-
+ <!-- TEXTO -->
+      <p>Texto.</p>
+ <!-- ACORDION DATOS -->
   <ion-accordion-group>
     <ion-accordion value="first">
       <ion-item slot="header" color="primary">
@@ -41,7 +40,7 @@
         <br>
         <ion-button expand="block">
         <ion-icon  slot="end" name="send"></ion-icon>
-        Enviar
+        Solicitar Tramite
       </ion-button>
       </div>
     </ion-accordion>
@@ -59,7 +58,7 @@
         <br>
         <ion-button expand="block">
           <ion-icon  slot="end" name="send"></ion-icon>
-          Enviar
+          Solicitar Tramite
         </ion-button>
         <ion-toast trigger="open-toast" message="Enviado" [duration]="3000" icon="checkmark"></ion-toast>
       </div>
@@ -79,7 +78,7 @@
         <br>
         <ion-button expand="block">
           <ion-icon  slot="end" name="send"></ion-icon>
-          Enviar
+          Solicitar Tramite
         </ion-button>
         <ion-toast trigger="open-toast" message="Enviado" [duration]="3000" icon="checkmark"></ion-toast>
       </div>

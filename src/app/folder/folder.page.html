@@ -1,29 +1,112 @@
-<!-- MENU -->
-<ion-header [translucent]="true">
+<!-- HEADER PAGINA MENU -->
+<ion-header [translucent]="true" id="header">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-    <img src="http://serverdesarrollo.irapuato.gob.mx/repositorio/assets/image-resources/2021/logo_irapuato_2021.png" width="50px" slot="end">
+    <ion-title>Bienvenido</ion-title>
+    <img src="http://serverdesarrollo.irapuato.gob.mx/repositorio/assets/image-resources/2021/logo_irapuato_2021.png"
+      width="50px" slot="end">
   </ion-toolbar>
 </ion-header>
 
+<!-- BODY -->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title class="ion-text-center" size="large" id="portal">Portal Informativo</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
+  <!-- CARD MISION -->
+  <ion-card-content>
+    <ion-card id="mision" color="success">
+      <img alt="mision"
+        src="http://serverbeta.irapuato.gob.mx/portalrh/recursos/gestor_bienvenida/gestor_bienvenida_16112022205651_63754e938224b.jpg" />
+      <ion-card-header>
+        <ion-card-title>MISIÓN</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Proveer al Gobierno Municipal y sus diferentes áreas de los mejores perfiles de trabajadores y trabajadoras,
+          para lograr alcanzar las metas de brindar atención y servicios de calidad a las y los ciudadanos,
+          así como generar un ambiente laboral digno y adecuado para el desarrollo de las y los empleados.</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-card-content>
 
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button href="#" tab="home">
-      <ion-icon name="person-outline"></ion-icon>
-      
-    </ion-tab-button>
-    <ion-tab-button tab="radio">
-      <ion-icon name="add-circle-outline"></ion-icon>
-      
-    </ion-tab-button>
-    <ion-tab-button tab="library">
-    <ion-icon name="qr-code-outline"></ion-icon>
-      
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
+  <!-- CARD VISION -->
+  <ion-card-content>
+    <ion-card id="vision">
+      <img alt="vision"
+        src="http://serverbeta.irapuato.gob.mx/portalrh/recursos/gestor_bienvenida/gestor_bienvenida_16112022205651_63754e938224b1.jpg" />
+      <ion-card-header>
+        <ion-card-title id="vision1">VISIÓN</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Ser una dependencia que implementa las acciones necesarias para propiciar
+          el bienestar y desarrollo de las y los empleados municipales,
+          para contribuir a la eficiencia de sus funciones,
+          además de la mejora del rendimiento individual y en equipo.</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-card-content>
+
+  <!-- CARD VALORES -->
+  <ion-card-content>
+    <ion-card color="primary">
+      <img alt="vision"
+        src="http://serverbeta.irapuato.gob.mx/portalrh/recursos/gestor_bienvenida/gestor_bienvenida_16112022205651_63754e938224b2.jpg" />
+      <ion-card-header>
+        <ion-card-title>VALORES</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Humanismo</p>
+        <p>Honestidad</p>
+        <p>Transparencia</p>
+        <p>Solidaridad</p>
+        <p>Responsabilidad</p>
+        <p>Compromiso</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-card-content>
+
+  <!-- DIV AVISO -->
+  <div>
+    <p id="aviso">AVISOS</p>
+    <img src="http://serverbeta.irapuato.gob.mx/portalrh/recursos/avisos/avisos_12012023182328_63c050209b9aa.jpg"
+      alt="aviso">
+  </div>
+
+  <!-- DIV MANUAL -->
+  <ion-card>
+    <ion-card-content>
+      <div id="manualdiv">
+        <p id="manual">Manual de Inducción</p>
+        <p id="manualtexto">Dentro de este portal, encontrarás un manual de inducción, el cual contiene información clara y detallada sobre
+          los diferentes procesos a los que serás acreedor al formar parte de nuestro equipo de trabajo y convertirte en un
+          servidor público.
+          Además de ofrecerte un asesoramiento y guía en algunas de las actividades que pudieran generarte algún tipo de
+          duda.</p>
+        <ion-grid id="botonesgrid">
+          <ion-row id="botones">
+            <!-- BOTON DOC -->
+            <ion-col>
+              <p>Descargar PDF</p>
+              <ion-button href="http://serverbeta.irapuato.gob.mx/portalrh/recursos/manuales/manuales_04072022174225_62c326818b1cc.pdf">
+                <ion-icon slot="icon-only" name="document-text"></ion-icon>
+              </ion-button>
+            </ion-col>
+    
+            <!-- BOTON MANUAL -->
+            <ion-col>
+              <p>Ver Manual</p>
+              <ion-button href="http://serverbeta.irapuato.gob.mx/portalrh/main/Manual">
+                <ion-icon fill="outline" slot="icon-only" name="book"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

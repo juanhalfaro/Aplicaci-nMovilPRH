@@ -1,27 +1,39 @@
 <!-- HEADER -->
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" id="header">
   <ion-toolbar>
     <ion-title>Asistencia</ion-title>
-    <!-- IMAGENES -->
-    <img src="https://webservice.irapuato.gob.mx/Imagenes/logoI.png" width="50px" slot="start"> 
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <!-- IMAGEN -->
     <img src="http://serverdesarrollo.irapuato.gob.mx/repositorio/assets/image-resources/2021/logo_irapuato_2021.png"
     width="50px" slot="end">
   </ion-toolbar>
 </ion-header>
 
 <!-- BODY -->
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" id="dbody">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large" class="ion-text-center">Asistencia</ion-title>
+      <ion-title size="large" class="ion-text-center">Asistencias</ion-title>
     </ion-toolbar>
   </ion-header>
 
+  <!-- CARD AVISO -->
+  <ion-card color="success" id="aviso">
+    <ion-card-header>
+      <ion-card-title>Aviso:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      La consulta del historial de asistencias cuenta con 14 días de diferencia. 
+    </ion-card-content>
+  </ion-card>
+
   <!-- INPUT EMPLEADO -->
-  <ion-card color="light">
+  <ion-card id="cardbody" color="light">
     <ion-card-content>
       <ion-input type="numeric" fill="solid" label="Numero de Empleado" labelPlacement="floating"
-        helperText="Ingresa un numero de Empleado" errorText="Numero Invalido" maxlength="10" ngModel></ion-input>
+        helperText="Ingresa un numero de Empleado" errorText="Numero Invalido" maxlength="10" minlength="10" ngModel></ion-input>
 
       <!-- INPUT RFC -->
       <br>
@@ -51,3 +63,4 @@
       </ion-grid>
     </ion-card-content>
   </ion-card>
+</ion-content>

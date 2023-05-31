@@ -1,0 +1,7 @@
+{
+  "name": "RecursosHumanos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

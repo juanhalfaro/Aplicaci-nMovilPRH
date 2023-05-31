@@ -1,0 +1,90 @@
+<!-- HEADER -->
+<ion-header [translucent]="true" id="header">
+  <ion-toolbar>
+    <ion-title>Buzón</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+   <!-- IMAGEN -->
+   <img src="http://serverdesarrollo.irapuato.gob.mx/repositorio/assets/image-resources/2021/logo_irapuato_2021.png"
+   width="50px" slot="end">
+  </ion-toolbar>
+</ion-header>
+
+<!-- BODY -->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="ion-text-center">Buzón</ion-title>
+    </ion-toolbar>
+
+    <!-- CARD-->
+    <ion-card color="light">
+      <ion-card-content>
+
+        <div name="wasd">
+          <br>
+          <ion-item>
+            <ion-select label="Dependencia" placeholder="Selecciona una Opción">
+              <ion-select-option value="">SECRETARÍA DEL AYUNTAMIENTO</ion-select-option>
+              <ion-select-option value="sppm">SECRETARÍA PARTICULAR DEL PRESIDENTE MUNICIPAL</ion-select-option>
+              <ion-select-option value="nes">SECRETARÍA TÉCNICA</ion-select-option>
+              <ion-select-option value="nes">SECRETARÍA DE SEGURIDAD CIUDADANA MUNICIPAL</ion-select-option>
+              <ion-select-option value="nes">TESORERÍA MUNICIPAL</ion-select-option>
+              <ion-select-option value="nes">CONTRALORÍA MUNICIPAL</ion-select-option>
+              <ion-select-option value="nes">OFICIALÍA MAYOR</ion-select-option>
+              <ion-select-option value="nes">INSTITUTO MUNICIPAL DE PLANEACIÓN </ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <br>
+          <ion-item>
+            <ion-select label="Tipo Buzón" placeholder="Selecciona una Opción">
+              <ion-select-option value="sugerencia">SUGERENCIA</ion-select-option>
+              <ion-select-option value="queja">QUEJA</ion-select-option>
+              <ion-select-option value="felicitacion">FELICITACIÓN</ion-select-option>
+              <ion-select-option value="denuncia">DENUNCIA</ion-select-option>
+              <ion-select-option value="reporte">REPORTE</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <!-- INPUT CORREO -->
+          <br>
+          <ion-input type="email" fill="solid" label="Correo" labelPlacement="floating" helperText="Ingresa un Correo"
+            errorText="Correo Invalido" ngModel email></ion-input>
+
+          <!-- INPUT TELEFONO -->
+          <br>
+          <ion-input type="text" fill="solid" label="Teléfono" labelPlacement="floating"
+            helperText="Ingrese un Numero Telefónico" errorText="Numero Invalido" maxlength="10" minlength="10"
+            ngModel></ion-input>
+
+          <!-- INPUT ASUNTO -->
+          <br>
+          <ion-input type="text" fill="solid" label="Asunto" labelPlacement="floating" helperText="Asunto" errorText=""
+            maxlength="10" ngModel></ion-input>
+
+          <!-- INPUT DESC -->
+          <br>
+          <ion-input type="text" fill="solid" label="Descripción" labelPlacement="floating" helperText="Descripción"
+            errorText="" maxlength="" minlength="" ngModel></ion-input>
+        </div>
+
+        <!-- BOTON ENV -->
+        <div>
+          <br>
+          <ion-button expand="block">
+            <ion-icon slot="end" name="send"></ion-icon>
+            Enviar
+          </ion-button>
+          <ion-toast trigger="open-toast" message="Enviado" [duration]="3000" icon="checkmark"></ion-toast>
+
+          <!-- BOTON CAN -->
+          <br>
+          <ion-button color="danger" expand="block">
+            <ion-icon slot="end" name="close"></ion-icon>
+            Cancelar
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>

@@ -18,3 +18,5 @@ import { TramitesPage } from './tramites.page';
   declarations: [TramitesPage]
 })
 export class TramitesPageModule {}
+
+

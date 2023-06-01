@@ -22,10 +22,7 @@
 <!-- CARD -->
   <ion-card color="light">
     <ion-card-content>
-
- <!-- TEXTO -->
-      <p>Texto.</p>
-      
+    
  <!-- ACORDION DATOS -->
   <ion-accordion-group>
     <ion-accordion value="first">
@@ -39,10 +36,7 @@
       <div class="ion-padding" slot="content">Domicilio a recoger</div>
       <div class="ion-padding" slot="content">
         <br>
-        <ion-button expand="block">
-        <ion-icon  slot="end" name="send"></ion-icon>
-        Solicitar Tramite
-      </ion-button>
+       
       </div>
     </ion-accordion>
 
@@ -56,6 +50,15 @@
       <div class="ion-padding" slot="content">Tiempo Respuesta</div>
       <div class="ion-padding" slot="content">Domicilio para recoger</div>
       <ion-button id="present-alert">Click Me</ion-button>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Inline Modal</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-button id="open-modal" expand="block">Open</ion-button>
+        
+      </ion-content>
 
     </ion-accordion>
 
